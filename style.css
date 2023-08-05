@@ -1,0 +1,234 @@
+
+*{
+    borer: 1px solid black;
+}
+
+/* animations!!!! */
+@keyframes scaleup{
+    0%{
+        scale: .5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+
+
+body{
+    overflow-x: hidden;
+}
+nav ul li{
+    color: black;
+    margin-left: 1rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+#main-sect{
+    margin-bottom: 4rem;
+    width: 100%;
+    height: 28rem;
+    background: url(images/pexels-creative-vix-370984.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-sub{
+    background: rgba(191, 243, 194, 0.589);
+    padding-top: 2rem;
+    border-radius: 15px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -15rem;
+}
+#info1{
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+}
+#first-image-set{
+    display: flex;
+    flex-direction: row;
+}
+#first-image-set>img:nth-child(1),
+#first-image-set>img:nth-child(2){
+    position: relative;
+}
+#first-image-set>img:nth-child(1){
+width: 12rem;
+height: 15rem;
+bottom: -2.5rem;
+left: 2rem;
+z-index: 100;
+}
+#first-image-set>img:nth-child(2){
+    width: 17rem;
+    height: 17rem;
+    bottom: 1.5rem;
+    right: -1rem;
+    /* left: -.5rem; */
+}
+
+/* explore segment styles */
+.search-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    background-color: rgb(240, 240, 219);
+    width: 15rem;
+    border-radius: 10px 10px 0 0;
+    height: 96%;
+    margin-top: 1rem;
+}
+.search-list input{
+    margin-top: 1rem;
+    border-radius: 10px;
+    height: 2.2rem;
+    border: none;
+}
+.search-list li{
+    list-style: none;
+    margin: .5rem 0;
+}
+.search-list li a{
+    text-decoration: none;
+    color: black;
+}
+#explore{
+display: flex;
+width: 100%;
+}
+.explore{
+    width: 100%;
+    height: auto;
+}
+.explore .card{
+    background: url(images/pexels-rene-asmussen-5157660.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12rem;
+    width: auto;
+    margin: 0;
+    margin: 1rem;
+}
+.explore .card a{
+    width: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: .75rem;
+}
+/* explore section ends */
+
+.world-in-bloom{
+    background: url(images/pexels-jonathan-borba-6544769.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    border-radius: 0;
+    
+}
+
+/* our gallery section */
+#our-gallery img{
+    height: 17rem;
+    width: 30rem;
+}
+#our-gallery-row-2 img{
+    width: 100%;
+}
+
+
+/* join us section */
+.join{
+    background: url(images/pexels-david-underland-3610042.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.join .card{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: rgb(254, 255, 255);
+}
+.join .card:first-child{
+    border-left: none;
+}
+.join .card:last-child{
+    border-right: none;
+}
+/* styling for medium screens and below */
+
+@media(max-width:758px){
+    nav{
+        margin-bottom: 1rem;
+    }
+    #main-sect{
+        width: 100vw;
+        height: 60vh;
+        margin-bottom: 13rem;
+    }
+    #main-sub{
+        padding-top: 2rem;
+        border-radius: 15px;
+        position: relative;
+        bottom: -10rem;
+        left: -rem;
+    }
+    .heading h1:not(span){
+        color: black;
+    }
+    #first-image-set>img:nth-child(1){
+        width: 80%;
+        height: 15rem;
+        
+        left: rem;
+        z-index: 100;
+    }
+    #explore{
+        display: flex;
+        flex-direction: column;
+    }
+    .explore .card a{
+        
+    }
+    .explore .card{
+        position: relative;
+    }
+    #e-card1,
+    #e-card3{
+        left: -2rem;
+    }
+    #e-card2{
+        right: -2rem;
+    }
+}
+
+@media(min-width:760px){
+    h1{
+        position: relative;
+        top: 3rem;
+    }
+}
